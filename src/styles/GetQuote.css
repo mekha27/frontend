@@ -1,0 +1,43 @@
+/* Main container styling */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Soft gray background */
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Sub-container for the quotes */
+.sub {
+    width: 60%; /* Adjust based on preference */
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Styling for each quote block */
+.subsub {
+    margin-bottom: 20px; /* Space between quotes */
+    padding: 20px;
+    border-left: 5px solid #007BFF; /* Blue accent line */
+    background-color: #e9ecef; /* Very light gray background for the quote */
+    border-radius: 5px;
+}
+
+/* Paragraph containing the quote text */
+.quote {
+    font-size: 1.2rem; /* Slightly larger font size for emphasis */
+    font-style: italic; /* Italicize the quote */
+    line-height: 1.6; /* Improve line spacing for readability */
+    color: #343a40; /* Slightly darker font color for contrast */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .sub {
+        width: 90%; /* More screen-width usage on smaller devices */
+    }
+}
